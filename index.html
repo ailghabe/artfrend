@@ -3,343 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="آرت فريند: حلول طباعة رقمية، أوفست، وإنك جيت متكاملة في مصر. نصمم ونطبع الكتب، الكروت، البنرات، والمزيد بأعلى جودة.">
-    <meta name="keywords" content="آرت فريند, طباعة, ديجيتال, أوفست, إنك جيت, تصميم, IGEN 5, RISO, Autoprint, مصر">
-    <title>آرت فريند | خبراء الطباعة والتصميم الإبداعي</title>
-
+    <title>آرت فريند للطباعة – بورتفوليو احترافي بتصميم كبير</title>
+    <!-- Google Fonts: Cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" type="image/png">
 </head>
 <body>
 
-    <div class="loading-overlay active" id="loading-overlay" aria-live="polite">
-        <div class="loader-content">
-            <img src="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" alt="تحميل آرت فريند..." class="loading-logo">
-            <div class="loader-dots"><span></span><span></span><span></span></div>
-        </div>
-    </div>
-
-    <header class="main-header-nav">
-        <nav class="main-navigation" id="main-navigation" aria-label="القائمة الرئيسية">
-            <div class="nav-container container">
-                <a href="#section-hero" class="nav-logo-link" aria-label="الصفحة الرئيسية لآرت فريند">
-                    <img src="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" alt="شعار آرت فريند" class="navbar-logo">
-                </a>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-menu-list" title="القائمة">
-                    <span class="sr-only">فتح/إغلاق القائمة</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <ul class="nav-menu-items" id="nav-menu-list" role="menubar">
-                    <li role="none"><a href="#section-hero" class="nav-item active" data-section="section-hero" role="menuitem">الرئيسية</a></li>
-                    <li role="none"><a href="#section-about" class="nav-item" data-section="section-about" role="menuitem">من نحن</a></li>
-                    <li role="none"><a href="#section-services" class="nav-item" data-section="section-services" role="menuitem">خدماتنا</a></li>
-                    <li role="none"><a href="#section-products" class="nav-item" data-section="section-products" role="menuitem">منتجاتنا</a></li>
-                    <li role="none"><a href="#section-portfolio" class="nav-item" data-section="section-portfolio" role="menuitem">أعمالنا</a></li>
-                    <li role="none"><a href="#section-contact" class="nav-item" data-section="section-contact" role="menuitem">اتصل بنا</a></li>
+    <!-- ==================== HEADER ==================== -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#hero" class="logo-link" aria-label="الصفحة الرئيسية لآرت فريند">
+                <!-- الشعار الأصلي (فوشيا وأسود) هو الأساس للثيم الفاتح -->
+                <img src="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" alt="شعار آرت فريند" id="main-site-logo" class="logo-image">
+            </a>
+            <nav id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#technologies" class="nav-link">تقنياتنا</a></li>
+                    <li><a href="#materials" class="nav-link">الخامات</a></li>
+                    <li><a href="#portfolio" class="nav-link">أعمالنا</a></li>
+                    <li><a href="#design-services" class="nav-link">خدمات التصميم</a></li>
+                    <li><a href="#clients" class="nav-link">عملاؤنا</a></li>
+                    <li><a href="#contact-details" class="nav-link contact-anchor">اتصل بنا</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            <button id="mobile-menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <main class="page-sections-container" id="main-content">
-
-        <!-- Section 1: Hero -->
-        <section id="section-hero" class="page-section hero-section active-section" aria-labelledby="hero-main-heading">
-            <div class="hero-background-media" aria-hidden="true">
-                <!-- يمكن وضع صورة أو فيديو هنا كخلفية -->
-                <!-- <img src="path/to/your/hero-background.jpg" alt=""> -->
-                <div class="hero-bg-shape hero-bg-shape-1"></div>
-                <div class="hero-bg-shape hero-bg-shape-2"></div>
-            </div>
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section id="hero" class="hero-section">
+            <div class="animated-grid-background"></div> <!-- Animated Grid Background -->
             <div class="hero-overlay"></div>
-            <div class="section-content hero-content-inner container">
-                <div class="hero-logo-main-container anim-reveal" data-anim_type="pop-in" data-anim_delay="0.2">
-                    <img src="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" alt="شعار آرت فريند الرئيسي" class="hero-main-page-logo">
+            <div class="container hero-content animate-on-scroll">
+                <h1 class="hero-title">آرت فريند للطباعة</h1>
+                <p class="hero-tagline">جودة احترافية وألوان تنبض بالحياة. شريككم للإبداع في عالم الطباعة منذ 2005.</p>
+                <div class="hero-actions">
+                    <a href="tel:01201111972" class="cta-button primary-cta"><i class="fas fa-phone-alt"></i> اطلب عرض سعر الآن</a>
+                    <a href="#portfolio" class="cta-button secondary-cta"><i class="fas fa-briefcase"></i> شاهد أعمالنا</a>
                 </div>
-                <h1 id="hero-main-heading" class="hero-title anim-reveal" data-anim_type="text-slide-up-stagger" data-anim_delay="0.4">
-                    آرت فريند: <span class="text-highlight">دقتك</span> في الطباعة، و<span class="text-highlight">إبداعك</span> في التصميم.
-                </h1>
-                <p class="hero-description anim-reveal" data-anim_type="fade-in-up-subtle" data-anim_delay="0.7">
-                    نقدم حلولاً متكاملة للطباعة عالية الجودة والتصميم الاحترافي التي تلبي كافة احتياجات الشركات والأفراد في مصر منذ عام 2005.
-                </p>
-                <div class="hero-cta-group anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.9">
-                    <a href="#section-services" class="btn btn-primary btn-lg scroll-to-section">
-                        <i class="fas fa-print icon-before" aria-hidden="true"></i> اكتشف خدماتنا
-                    </a>
-                    <a href="#section-contact" class="btn btn-outline-light btn-lg scroll-to-section">
-                        <i class="fas fa-paper-plane icon-before" aria-hidden="true"></i> اطلب عرض سعر
-                    </a>
-                </div>
-            </div>
-            <a href="#section-about" class="scroll-down-prompt anim-reveal" data-anim_type="fade-in" data-anim_delay="1.3" aria-label="التمرير لقسم من نحن">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </section>
-
-        <!-- Section 2: About Us -->
-        <section id="section-about" class="page-section about-us-section" aria-labelledby="about-heading">
-            <div class="section-content about-us-content container">
-                <div class="about-us-text-column">
-                    <span class="eyebrow anim-reveal" data-anim_type="fade-in-subtle" data-anim_delay="0.1">خبرتنا، شغفنا</span>
-                    <h2 id="about-heading" class="section-main-title anim-reveal" data-anim_type="text-reveal-right" data-anim_delay="0.2">نحن <span class="text-highlight-alt">آرت فريند</span>: جودة طباعة <span class="text-highlight-alt">تفوق</span> التوقعات.</h2>
-                    <p class="anim-reveal" data-anim_type="text-reveal-right" data-anim_delay="0.4">
-                        لأكثر من عقد ونصف، ونحن في "آرت فريند" نقدم لعملائنا في جميع أنحاء مصر حلول طباعة لا تضاهى. إيماننا العميق بأهمية التفاصيل الدقيقة واستخدامنا لأحدث التقنيات العالمية هو ما يميزنا ويجعلنا الشريك المفضل للعديد من الشركات الرائدة والأفراد المبدعين.
-                    </p>
-                    <p class="anim-reveal" data-anim_type="text-reveal-right" data-anim_delay="0.5">
-                        مهمتنا هي تحويل أفكاركم إلى واقع ملموس يعكس احترافيتكم ويساهم في نجاحكم، مع التزام كامل بالمواعيد وتقديم أفضل قيمة.
-                    </p>
-                </div>
-                <figure class="about-us-image-column anim-reveal" data-anim_type="image-reveal-left" data-anim_delay="0.3">
-                    <!-- صورة تعبر عن فريق العمل أو بيئة الشركة -->
-                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=1080" alt="فريق عمل آرت فريند في اجتماع إبداعي يناقش حلول الطباعة.">
-                </figure>
             </div>
         </section>
 
-        <!-- Section 3: Our Services (with Machine Images) -->
-        <section id="section-services" class="page-section services-tech-section" aria-labelledby="services-main-heading">
-            <div class="section-content services-tech-content container">
-                <span class="eyebrow text-center anim-reveal" data-anim_type="fade-in-up">تقنياتنا المتطورة</span>
-                <h2 id="services-main-heading" class="section-main-title text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.1">نقدم لكم أحدث تقنيات الطباعة العالمية</h2>
-                <p class="section-subtitle text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.2">
-                    نستثمر في أفضل الماكينات لضمان حصولك على مطبوعات لا مثيل لها في الدقة والجودة والألوان.
-                </p>
-                <div class="machines-grid">
-                    <article class="machine-card anim-reveal" data-anim_type="card-fly-in-right" data-anim_delay="0.3">
-                        <figure class="machine-image-wrapper">
-                            <img src="https://i.ibb.co/spr5KZjY/387711-1.png" alt="ماكينة طباعة ديجيتال Xerox IGEN 5">
-                        </figure>
-                        <div class="machine-info">
-                            <h3 class="machine-name">طباعة ديجيتال <span class="machine-model">(Xerox IGEN 5)</span></h3>
-                            <p class="machine-description">دقة فائقة وألوان زاهية للكميات المتنوعة، مثالية للمطبوعات الفاخرة والسريعة.</p>
-                            <ul class="machine-features">
-                                <li>جودة صور استثنائية</li>
-                                <li>سرعة إنتاج عالية</li>
-                                <li>تنوع في الخامات والأحجام</li>
+        <!-- ==================== ABOUT US SECTION (Revised Order) ==================== -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-intro-text animate-on-scroll">
+                    <h2 class="section-title"><i class="fas fa-info-circle icon-heading"></i> عن آرت فريند</h2>
+                    <p class="section-intro">منذ تأسيس "آرت فريند للطباعة" عام 2005، ونحن ملتزمون بتقديم حلول طباعية مبتكرة تتجاوز توقعات عملائنا. نجمع بين الفن، الدقة، وأحدث التقنيات لنحول أفكاركم إلى واقع ملموس ينبض بالإبداع والجودة التي تستحقونها.</p>
+                    <p class="section-details">هدفنا أن نكون الوجهة الأولى للشركات والأفراد الباحثين عن مطبوعات احترافية تعكس هويتهم وتخدم أهدافهم. نفخر بفريق عملنا المتخصص وبقدرتنا على التعامل مع كافة المشاريع، من البطاقة الشخصية إلى الحملات الإعلانية المتكاملة، بنفس القدر من الاهتمام والتفاني.</p>
+                </div>
+
+                <div id="contact-and-location-info" class="contact-location-wrapper animate-on-scroll" data-stagger-delay="200">
+                    <h3 class="subsection-title-main"><i class="fas fa-map-marker-alt"></i> فروعنا وتفاصيل التواصل</h3>
+                    <div class="branches-and-contact-grid">
+                        <div class="info-card branches-card">
+                            <h4 class="card-title"><i class="fas fa-store-alt"></i> فروعنا المتاحة</h4>
+                            <div class="branch-item">
+                                <h5><i class="fas fa-map-pin"></i> فرع الجيزة:</h5>
+                                <p>11 برج الشهر العقاري، شارع مراد، أمام مطعم جاد، الدور الأول.</p>
+                                <a href="https://maps.google.com/?q=11+برج+الشهر+العقاري،+شارع+مراد،+الجيزة" target="_blank" class="map-link">عرض على الخريطة <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="branch-item">
+                                <h5><i class="fas fa-map-pin"></i> فرع المعادي:</h5>
+                                <p>6 د/4 شارع النصر، تقسيم اللاسلكي، أسفل LC Waikiki.</p>
+                                <a href="https://maps.google.com/?q=6D/4+شارع+النصر،+تقسيم+اللاسلكي،+المعادي" target="_blank" class="map-link">عرض على الخريطة <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div id="contact-details" class="info-card contact-card"> <!-- ID for nav link -->
+                            <h4 class="card-title"><i class="fas fa-phone-square-alt"></i> معلومات الاتصال المباشر</h4>
+                            <ul class="contact-list">
+                                <li><i class="fas fa-phone-volume icon-contact-list"></i><strong>الخط الساخن:</strong> <a href="tel:01201111972">01201111972</a></li>
+                                <li><i class="fab fa-whatsapp icon-contact-list"></i><strong>واتساب:</strong> <a href="https://wa.me/201001668439" target="_blank">01001668439</a></li>
+                                <li><i class="fas fa-globe icon-contact-list"></i><strong>الموقع الإلكتروني:</strong> <a href="http://www.artfriendeg.com" target="_blank">WWW.ARTFRIENDEG.COM</a></li>
+                                <li><i class="fas fa-envelope-open-text icon-contact-list"></i><strong>البريد الإلكتروني:</strong> <a href="mailto:info@artfriendeg.com">info@artfriendeg.com</a></li>
+                            </ul>
+                            <h5 class="social-card-title"><i class="fas fa-hashtag"></i> كن على تواصل معنا:</h5>
+                            <ul class="social-list-card">
+                                <li><a href="https://www.facebook.com/artfriend.eg/" target="_blank" aria-label="فيسبوك" class="social-icon-c facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/artfriend.eg/" target="_blank" aria-label="انستجرام" class="social-icon-c instagram"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                    </article>
-                    <article class="machine-card anim-reveal" data-anim_type="card-fly-in-right" data-anim_delay="0.45">
-                         <figure class="machine-image-wrapper">
-                            <img src="https://images.squarespace-cdn.com/content/v1/5e513aabec1e4d2bc3e4c9e8/1677591655083-M09WE2WGQSSMB80WF9WX/Duplicator-2.png" alt="ماكينة طباعة إنك جيت RISO">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TECHNOLOGIES SECTION (Machines) ==================== -->
+        <section id="technologies" class="technologies-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll"><i class="fas fa-cogs icon-heading"></i> تقنياتنا المتطورة: دقة وجودة بلا حدود</h2>
+                <p class="section-intro animate-on-scroll" data-stagger-delay="100">في آرت فريند، نستثمر في أحدث ما توصلت إليه تكنولوجيا الطباعة لضمان حصول عملائنا على منتجات تفوق توقعاتهم. أسطولنا من الماكينات الحديثة والمتنوعة يتيح لنا تلبية كافة الاحتياجات بكفاءة وسرعة لا مثيل لهما.</p>
+                <div class="machines-layout-grid">
+                    <article class="machine-showcase-card animate-on-scroll" data-stagger-delay="200">
+                        <figure class="machine-img-container">
+                            <img src="https://i.ibb.co/spr5KZjY/387711-1.png" alt="ماكينة طباعة ديجيتال Xerox IGEN 5 فائقة الجودة">
                         </figure>
-                        <div class="machine-info">
-                            <h3 class="machine-name">طباعة إنك جيت <span class="machine-model">(RISO)</span></h3>
-                            <p class="machine-description">كفاءة عالية وتكلفة اقتصادية لطباعة الكميات الكبيرة من الملازم والمواد التدريبية.</p>
-                             <ul class="machine-features">
-                                <li>سرعة طباعة مذهلة</li>
-                                <li>تكلفة منخفضة للصفحة</li>
-                                <li>جودة ألوان ممتازة للكميات</li>
+                        <div class="machine-details-content">
+                            <h3 class="machine-title">ديجيتال (Digital): Xerox IGEN 5</h3>
+                            <p class="machine-summary">معيار الذهب في الطباعة الرقمية. تقدم IGEN 5 جودة استثنائية، ألوانًا نابضة بالحياة، وتفاصيل مذهلة، مما يجعلها الخيار الأمثل للمطبوعات الفاخرة، الكميات المتغيرة، والمشاريع التي تتطلب تخصيصًا دقيقًا.</p>
+                            <ul class="machine-highlights">
+                                <li><i class="fas fa-star highlight-icon"></i> دقة طباعة فائقة (2400 × 2400 dpi).</li>
+                                <li><i class="fas fa-palette highlight-icon"></i> نظام ألوان خماسي لإمكانيات لونية متقدمة.</li>
+                                <li><i class="fas fa-clone highlight-icon"></i> مرونة في التعامل مع خامات متنوعة حتى 350 جرام.</li>
+                                <li><i class="fas fa-bolt highlight-icon"></i> سرعة عالية وإنتاجية ممتازة.</li>
+                            </ul>
+                            <p class="machine-applications"><strong>مثالية لـ:</strong> الكتيبات الراقية، التقارير السنوية، بطاقات الدعوة الفاخرة، أغلفة الكتب، مواد التسويق المخصصة، المطبوعات بكميات محدودة أو متغيرة.</p>
+                        </div>
+                    </article>
+                    <article class="machine-showcase-card animate-on-scroll" data-stagger-delay="300">
+                        <figure class="machine-img-container">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5e513aabec1e4d2bc3e4c9e8/1677591655083-M09WE2WGQSSMB80WF9WX/Duplicator-2.png" alt="ماكينة طباعة إنك جيت RISO عالية السرعة">
+                        </figure>
+                        <div class="machine-details-content">
+                            <h3 class="machine-title">إنك جيت (Inkjet): RISO</h3>
+                            <p class="machine-summary">حل الطباعة الذكي للكميات الكبيرة. تجمع ماكينات RISO بين السرعة الفائقة والتكلفة الاقتصادية، مما يجعلها مثالية لطباعة المستندات، الكتب، والمواد التعليمية بكفاءة عالية، خاصة للطباعة بلون أو لونين.</p>
+                            <ul class="machine-highlights">
+                                <li><i class="fas fa-rocket highlight-icon"></i> سرعات طباعة مذهلة (تصل إلى 160 صفحة/دقيقة).</li>
+                                <li><i class="fas fa-coins highlight-icon"></i> تكلفة منخفضة جدًا للحبر عند طباعة كميات كبيرة.</li>
+                                <li><i class="fas fa-leaf highlight-icon"></i> تقنية صديقة للبيئة باستهلاك منخفض للطاقة.</li>
+                                <li><i class="fas fa-book-reader highlight-icon"></i> مثالية للكتب، المذكرات، والمواد التعليمية.</li>
+                            </ul>
+                            <p class="machine-applications"><strong>مثالية لـ:</strong> الكتب التعليمية، المذكرات، الفواتير، كشوف الحساب، النشرات الإخبارية، المواد التدريبية، وأي مطبوعات بكميات كبيرة تتطلب سرعة واقتصاد.</p>
+                        </div>
+                    </article>
+                    <article class="machine-showcase-card animate-on-scroll" data-stagger-delay="400">
+                        <figure class="machine-img-container">
+                            <img src="https://polytipo.com.mx/media/images/home/infraestructura.png" alt="ماكينة طباعة أوفست Autoprint للإنتاج الضخم">
+                        </figure>
+                        <div class="machine-details-content">
+                            <h3 class="machine-title">أوفست (Offset): Autoprint</h3>
+                            <p class="machine-summary">الجودة التقليدية التي لا يُعلى عليها للإنتاج الضخم. تضمن طباعة الأوفست دقة ألوان لا مثيل لها وجودة ثابتة عبر آلاف النسخ، مما يجعلها الخيار الاقتصادي الأمثل للمشاريع الكبرى.</p>
+                            <ul class="machine-highlights">
+                                <li><i class="fas fa-gem highlight-icon"></i> جودة طباعة استثنائية وتفاصيل دقيقة للغاية.</li>
+                                <li><i class="fas fa-expand-arrows-alt highlight-icon"></i> التعامل مع مجموعة واسعة من مقاسات وأنواع الورق.</li>
+                                <li><i class="fas fa-infinity highlight-icon"></i> اقتصادية للغاية للكميات الكبيرة والضخمة.</li>
+                                <li><i class="fas fa-brush highlight-icon"></i> إمكانية استخدام أحبار خاصة وألوان Pantone® لمطابقة دقيقة.</li>
+                            </ul>
+                            <p class="machine-applications"><strong>مثالية لـ:</strong> الكتب التجارية، المجلات، الصحف، الحملات الإعلانية واسعة النطاق، مواد التعبئة والتغليف، الكتالوجات والبروشورات بكميات كبيرة.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERIALS SECTION (Card Design) ==================== -->
+        <section id="materials" class="materials-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll"><i class="fas fa-layer-group icon-heading"></i> عالم من الخامات يلبي طموحاتك</h2>
+                <p class="section-intro animate-on-scroll" data-stagger-delay="100">نقدم لكم تشكيلة واسعة ومتنوعة من أجود الخامات التي تناسب كافة احتياجاتكم الطباعية، من الأناقة الكلاسيكية للأوراق الفاخرة إلى الحداثة الجريئة لمواد العرض المبتكرة.</p>
+
+                <div class="material-category-block animate-on-scroll" data-stagger-delay="200">
+                    <h3 class="category-title"><i class="fas fa-digital-tachograph"></i> خامات الطباعة الرقمية (Digital)</h3>
+                    <div class="materials-showcase-grid stagger-children">
+                        <div class="material-showcase-item">
+                            <img src="https://miro.medium.com/v2/resize:fit:1200/1*X8tNfpwSyaC3e_sYYrrsgQ.png" alt="ورق فبريانو">
+                            <div class="material-item-info">
+                                <h4>ورق فبريانو</h4>
+                                <p>لمسة فخامة للكروت الشخصية، الدعوات الراقية، وأغلفة الكتب المميزة.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://www.printercart.ru/upload/iblock/60d/bprlsdgxzuylidj69tpviieln16gd0js.jpg" alt="ورق كوشيه لامع ومط">
+                            <div class="material-item-info">
+                                <h4>ورق كوشيه (لامع/مط)</h4>
+                                <p>أوزان متنوعة (115-350جم). مثالي للبروشورات، الفلايرات، وأغلفة المجلات.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://kreativekymona.com/wp-content/uploads/2017/05/glitter-paper-1.jpg?w=640" alt="ورق كريستال جليتر">
+                            <div class="material-item-info">
+                                <h4>ورق كريستال (جليتر)</h4>
+                                <p>بألوانه (كريمي، أوف وايت، أبيض). يضفي بريقًا خاصًا لكروت الأفراح وبطاقات التهنئة.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://ozturkticaret.com.tr/uploads/p/p/Canson-Figueras-24x33cm-10yp-290gr-Akrilik-Yagliboya-Resim-Blok-200857221_1.jpg" alt="ورق قماش كانسون">
+                            <div class="material-item-info">
+                                <h4>ورق قماش (كانسون)</h4>
+                                <p>ملمس فريد لطباعة اللوحات الفنية، وبطاقات الدعوة التي لا تُنسى.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://goods-photos.static1-sima-land.com/items/5931398/2/1600.jpg?v=1616999376" alt="ورق استيكر لاصق">
+                            <div class="material-item-info">
+                                <h4>ورق استيكر (لاصق)</h4>
+                                <p>حل عملي للملصقات، ليبل المنتجات، وكروت الخدش المبتكرة.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://i.ibb.co/Lh2Byd01/brown-paper-text-space.jpg" alt="أوراق كرافت بنية">
+                            <div class="material-item-info">
+                                <h4>أوراق كرافت</h4>
+                                <p>للتغليف الصديق للبيئة، الكروت ذات الطابع الريفي، والأكياس الورقية الأنيقة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-category-block animate-on-scroll" data-stagger-delay="300">
+                    <h3 class="category-title"><i class="fas fa-store-alt"></i> خامات الطباعة الداخلية (Indoor)</h3>
+                    <div class="materials-showcase-grid stagger-children">
+                        <div class="material-showcase-item">
+                            <img src="https://avatars.mds.yandex.net/get-altay/9114271/2a00000190a34020779bed9627d7900a59c0/XXXL" alt="بانر إعلاني داخلي">
+                            <div class="material-item-info">
+                                <h4>بانر (Banner)</h4>
+                                <p>للافتات الداخلية في المعارض والمؤتمرات، وحوامل الرول أب الجذابة.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://image.made-in-china.com/2f0j00inSlCwzsPubm/Promotional-Outdoor-PVC-Flex-Signs-Raw-Roll-Materials.webp" alt="فليكس فيس">
+                            <div class="material-item-info">
+                                <h4>فليكس (Flex Face)</h4>
+                                <p>لواجهات المحلات المضيئة داخليًا، وتغطية الديكورات الجدارية بلمسة فنية.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://avatars.mds.yandex.net/i?id=280e89701e4e316825bc0c8ba6a96731_l-5304681-images-thumbs&ref=rim&n=13&w=1024&h=768" alt="سي ثرو لاصق نوافذ">
+                            <div class="material-item-info">
+                                <h4>سي ثرو (One Way Vision)</h4>
+                                <p>حل مثالي للنوافذ الزجاجية، يسمح بالرؤية من الداخل للخارج مع عرض تصميمك.</p>
+                            </div>
+                        </div>
+                         <div class="material-showcase-item">
+                            <img src="https://fastcolor.ru/wp-content/uploads/2022/05/samokl_plenka_prozrachnaya_glyantsevaya.jpg" alt="فينيل شفاف لاصق">
+                            <div class="material-item-info">
+                                <h4>فينيل شفاف</h4>
+                                <p>لملصقات الزجاج الأنيقة، والطباعة على الأسطح الملونة مع الحفاظ على لون السطح.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://image.made-in-china.com/2f0j00NvrbZgTzCVok/Clear-Removable-Glue-Car-Sticker-PVC-Self-Adhesive-Vinyl.webp" alt="فينيل أبيض لاصق">
+                            <div class="material-item-info">
+                                <h4>فينيل أبيض</h4>
+                                <p>متعدد الاستخدامات للملصقات، وتغطية الأسطح برسومات وتصاميم إعلانية.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://m.media-amazon.com/images/I/51CG2fwxMvL.jpg" alt="ورق جلوسي مط للصور">
+                            <div class="material-item-info">
+                                <h4>ورق جلوسي مط</h4>
+                                <p>لطباعة الصور الفوتوغرافية والبوسترات عالية الجودة بمظهر مطفي يقلل الانعكاسات.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://chelyabinsk.tonexpert.ru/wa-data/public/shop/products/13/00/13/images/2553/2553.750x0.jpg" alt="ورق جلوسي لامع مع لامينيشن">
+                            <div class="material-item-info">
+                                <h4>ورق جلوسي (لامينيشن لامع)</h4>
+                                <p>لصور وبوسترات بمظهر لامع جذاب وحماية إضافية للمطبوعات من العوامل الخارجية.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://foto-ug.ru/wp-content/uploads/2024/05/159.jpg" alt="فيلم باك لايت للإعلانات المضيئة">
+                            <div class="material-item-info">
+                                <h4>باك لايت فيلم (Backlit)</h4>
+                                <p>الخيار الأمثل للوحات الإعلانية المضيئة (لايت بوكس) في المتاجر والمعارض لجذب الانتباه.</p>
+                            </div>
+                        </div>
+                        <div class="material-showcase-item">
+                            <img src="https://static.tildacdn.com/tild6261-3731-4136-b333-303933623162/shirokoformatnaja-pe.jpg" alt="قماش كانفس للطباعة الداخلية">
+                            <div class="material-item-info">
+                                <h4>كانفس (Canvas - Indoor)</h4>
+                                <p>لطباعة اللوحات الفنية الجدارية، والصور الشخصية، وإضفاء لمسة فنية على الديكورات الداخلية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="material-category-block animate-on-scroll" data-stagger-delay="400">
+                    <h3 class="category-title"><i class="fas fa-cloud-sun"></i> خامات الطباعة الخارجية (Outdoor)</h3>
+                    <div class="materials-showcase-grid stagger-children">
+                        <div class="material-showcase-item">
+                            <img src="https://i.ebayimg.com/images/g/RqcAAOSwBzZjMm4W/s-l400.jpg" alt="قماش كانفس للطباعة الخارجية">
+                            <div class="material-item-info">
+                                <h4>كانفس (Canvas - Outdoor)</h4>
+                                <p>للافتات القماشية الخارجية، والإعلانات المصممة لتحمل العوامل الجوية المختلفة.</p>
+                            </div>
+                        </div>
+                        <!-- يمكنك إضافة المزيد من الخامات الخارجية هنا بنفس النمط -->
+                    </div>
+                </div>
+                <!-- Paper Sizes Information -->
+                <div class="paper-sizes-info-block animate-on-scroll" data-stagger-delay="500">
+                    <h3 class="category-title" style="font-size: 1.8rem; margin-bottom:2rem;"><i class="fas fa-ruler-combined"></i> دليل مقاسات الورق الشائعة</h3>
+                    <div class="paper-sizes-flex-container">
+                        <div class="paper-size-group">
+                            <h4>المقاسات التجارية (تقريبية):</h4>
+                            <ul>
+                                <li>فرخ كامل: 100 سم × 70 سم</li>
+                                <li>نصف فرخ: 70 سم × 50 سم</li>
+                                <li>ربع فرخ: 50 سم × 35 سم</li>
                             </ul>
                         </div>
-                    </article>
-                    <article class="machine-card anim-reveal" data-anim_type="card-fly-in-right" data-anim_delay="0.6">
-                         <figure class="machine-image-wrapper">
-                            <img src="https://polytipo.com.mx/media/images/home/infraestructura.png" alt="ماكينة طباعة أوفست Autoprint">
-                        </figure>
-                        <div class="machine-info">
-                            <h3 class="machine-name">طباعة أوفست <span class="machine-model">(Autoprint)</span></h3>
-                            <p class="machine-description">الجودة التقليدية المثالية للإنتاج الضخم من الكتب والمجلات والمواد الدعائية الفاخرة.</p>
-                             <ul class="machine-features">
-                                <li>جودة طباعة ثابتة للإنتاج الكبير</li>
-                                <li>خيارات ورق وتشطيبات متنوعة</li>
-                                <li>الأكثر اقتصاداً للكميات الضخمة</li>
+                        <div class="paper-size-group">
+                            <h4>سلسلة المقاسات الدولية (ISO A):</h4>
+                            <ul>
+                               <li>A0: 118.9 سم × 84.1 سم</li>
+                               <li>A1: 84.1 سم × 59.4 سم</li>
+                               <li>A2: 59.4 سم × 42.0 سم</li>
+                               <li>A3: 42.0 سم × 29.7 سم</li>
+                               <li>A4 (الأكثر شيوعًا): 29.7 سم × 21.0 سم</li>
+                               <li>A5: 21.0 سم × 14.8 سم</li>
+                               <li>A6: 14.8 سم × 10.5 سم</li>
                             </ul>
                         </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 4: Our Products -->
-        <section id="section-products" class="page-section products-section" aria-labelledby="products-heading">
-            <div class="section-content products-content container">
-                <span class="eyebrow text-center anim-reveal" data-anim_type="fade-in-up">من إبداعاتنا</span>
-                <h2 id="products-heading" class="section-main-title text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.1">منتجات متنوعة تلبي كل <span class="text-highlight-alt">احتياج</span></h2>
-                <div class="products-grid anim-reveal" data-anim_type="stagger-cards-up" data-stagger_delay="0.1">
-                    <div class="product-card">
-                        <div class="product-icon"><i class="fas fa-book-reader"></i></div>
-                        <h3 class="product-title">الكتب والملازم</h3>
-                        <p class="product-description">هارد كافر، سلك، خياطة، ملازم بجودة عالية.</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon"><i class="fas fa-id-card-alt"></i></div>
-                        <h3 class="product-title">كروت الخدش</h3>
-                        <p class="product-description">أكواد آمنة للمنصات التعليمية والتسويقية.</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon"><i class="fas fa-file-image"></i></div>
-                        <h3 class="product-title">البوسترات واللافتات</h3>
-                        <p class="product-description">تصاميم جذابة بأحجام متنوعة للفت الأنظار.</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon"><i class="fas fa-sticky-note"></i></div>
-                        <h3 class="product-title">النوت بوك والدفاتر</h3>
-                        <p class="product-description">تصاميم مخصصة تعكس هوية شركتك.</p>
-                    </div>
-                     <div class="product-card">
-                        <div class="product-icon"><i class="fas fa-certificate"></i></div>
-                        <h3 class="product-title">الشهادات والتقديرات</h3>
-                        <p class="product-description">طباعة فاخرة لشهادات التقدير والمناسبات.</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon"><i class="fas fa-folder-open"></i></div>
-                        <h3 class="product-title">الفولدرات والبروشورات</h3>
-                        <p class="product-description">مواد دعائية احترافية لتعزيز علامتك التجارية.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: Portfolio -->
-        <section id="section-portfolio" class="page-section portfolio-showcase-section" aria-labelledby="portfolio-main-heading">
-            <div class="section-content portfolio-showcase-content container">
-                <span class="eyebrow text-center anim-reveal" data-anim_type="fade-in-up">لمساتنا الفنية</span>
-                <h2 id="portfolio-main-heading" class="section-main-title text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.1">معرض <span class="text-highlight">أعمالنا</span>: الجودة تتحدث عن نفسها</h2>
-                <p class="section-subtitle text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.2">
-                    استعرض مجموعة مختارة من المشاريع التي نفخر بتنفيذها، والتي تعكس التزامنا بالدقة والإبداع. (يرجى استبدال الصور المؤقتة بأعمالكم الفعلية)
-                </p>
-                <div class="portfolio-items-grid anim-reveal" data-anim_type="stagger-fade-in" data-stagger_delay="0.15">
-                    <!-- استبدل هذه بصور حقيقية ووصف دقيق من أعمالكم -->
-                    <figure class="portfolio-gallery-item">
-                        <img src="https://images.unsplash.com/photo-1593697909607-c40a79547374?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=800" alt="كتاب مطبوع بتجليد فاخر وألوان غنية">
-                        <figcaption class="portfolio-item-overlay">
-                            <h3>كتب تعليمية فاخرة</h3>
-                            <p>طباعة ديجيتال عالية الجودة</p>
-                        </figcaption>
+        <!-- ==================== LAMINATION (SULOFAN) INFO SECTION ==================== -->
+        <section id="lamination-info" class="lamination-info-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll"><i class="fas fa-adjust icon-heading"></i> لمسة احترافية: السولوفان (Lamination)</h2>
+                <p class="section-intro animate-on-scroll" data-stagger-delay="100">السولوفان، أو التغليف الحراري، ليس مجرد طبقة حماية، بل هو إضافة جمالية ترفع من قيمة مطبوعاتك. تعرّف على الفروقات بين النوعين الرئيسيين لتختار الأنسب لتصميمك.</p>
+                <div class="lamination-showcase-grid">
+                    <figure class="lamination-image-container animate-on-scroll" data-stagger-delay="200">
+                        <img src="https://i.ibb.co/PyHMs19/scale-1200.png" alt="مقارنة بين السولوفان المط واللامع">
+                        <figcaption>الاختيار بين المط واللامع يعتمد على التأثير المرغوب وطبيعة المطبوعة.</figcaption>
                     </figure>
-                    <figure class="portfolio-gallery-item">
-                        <img src="https://images.unsplash.com/photo-1516021594517-875c0af967e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=800" alt="مجموعة من كروت الخدش بتصاميم مختلفة">
-                        <figcaption class="portfolio-item-overlay">
-                            <h3>كروت خدش للمنصات</h3>
-                            <p>أمان وجودة عالية</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="portfolio-gallery-item">
-                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=800" alt="بوستر إعلاني كبير لفعالية">
-                        <figcaption class="portfolio-item-overlay">
-                            <h3>بوسترات ولافتات</h3>
-                            <p>تأثير بصري قوي</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="portfolio-gallery-item">
-                        <img src="https://images.unsplash.com/photo-1586282028336-99696b3506c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=800" alt="مجموعة من النوت بوك المخصصة للشركات">
-                        <figcaption class="portfolio-item-overlay">
-                            <h3>نوت بوك وهوية بصرية</h3>
-                            <p>تصاميم تعكس علامتك</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 6: Why Choose Us (Renamed for clarity, can keep #section-why-us ID) -->
-        <section id="section-why-us" class="page-section why-choose-artfriend-section" aria-labelledby="why-artfriend-heading">
-             <div class="section-content why-choose-artfriend-content container">
-                <span class="eyebrow text-center anim-reveal" data-anim_type="fade-in-up">تميزنا يخدم نجاحك</span>
-                <h2 id="why-artfriend-heading" class="section-main-title text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.1">لماذا <span class="text-highlight-alt">آرت فريند</span> هو شريكك <span class="text-highlight-alt">المثالي</span> في الطباعة؟</h2>
-                <div class="why-choose-grid">
-                    <div class="why-choose-item anim-reveal" data-anim_type="pop-up-feature" data-anim_delay="0.3">
-                        <div class="why-choose-icon"><i class="fas fa-medal"></i></div>
-                        <h3 class="why-choose-title">جودة عالمية المستوى</h3>
-                        <p class="why-choose-description">نستخدم أحدث التقنيات العالمية وأجود الخامات لنضمن لك مطبوعات تضاهي أفضل المعايير.</p>
-                    </div>
-                    <div class="why-choose-item anim-reveal" data-anim_type="pop-up-feature" data-anim_delay="0.45">
-                        <div class="why-choose-icon"><i class="fas fa-clock"></i></div>
-                        <h3 class="why-choose-title">التزام بالمواعيد</h3>
-                        <p class="why-choose-description">ندرك قيمة وقتك، ونعمل بكفاءة عالية لضمان تسليم جميع مشاريعك في الوقت المحدد تمامًا.</p>
-                    </div>
-                    <div class="why-choose-item anim-reveal" data-anim_type="pop-up-feature" data-anim_delay="0.6">
-                        <div class="why-choose-icon"><i class="fas fa-dollar-sign"></i></div>
-                        <h3 class="why-choose-title">أسعار تنافسية</h3>
-                        <p class="why-choose-description">نقدم لك أفضل قيمة مقابل استثمارك، مع حلول اقتصادية وعروض مميزة للشركات والكميات.</p>
-                    </div>
-                    <div class="why-choose-item anim-reveal" data-anim_type="pop-up-feature" data-anim_delay="0.75">
-                        <div class="why-choose-icon"><i class="fas fa-headset"></i></div>
-                        <h3 class="why-choose-title">دعم فني متكامل</h3>
-                        <p class="why-choose-description">فريقنا من الخبراءพร้อม لمساعدتك في كل خطوة، من الفكرة الأولية وحتى المنتج النهائي.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 7: Contact Us -->
-        <section id="section-contact" class="page-section contact-section-final" aria-labelledby="contact-main-heading">
-            <div class="contact-bg-elements" aria-hidden="true">
-                 <div class="contact-blob contact-blob-1"></div>
-                 <div class="contact-blob contact-blob-2"></div>
-            </div>
-            <div class="section-content contact-section-content container">
-                <span class="eyebrow text-center anim-reveal" data-anim_type="fade-in-up">لنتحدث عن مشروعك</span>
-                <h2 id="contact-main-heading" class="section-main-title text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.1">تواصل معنا <span class="text-highlight">الآن</span> ودعنا نحول أفكارك إلى <span class="text-highlight">واقع</span>!</h2>
-                <p class="section-subtitle text-center anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.2">
-                    فريقنا جاهز للإجابة على جميع استفساراتك، تقديم الاستشارات، وإعداد عرض سعر مخصص لمشروعك الطباعي القادم.
-                </p>
-                <div class="contact-channels-wrapper anim-reveal" data-anim_type="stagger-fade-in" data-stagger_delay="0.1">
-                    <a href="tel:01201111972" class="contact-channel-card">
-                        <i class="fas fa-phone-volume"></i>
-                        <h4>الخط الساخن</h4>
-                        <p>01201111972</p>
-                    </a>
-                    <a href="https://wa.me/201001668439" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <h4>واتساب</h4>
-                        <p>01001668439</p>
-                    </a>
-                    <a href="mailto:info@artfriendeg.com" class="contact-channel-card">
-                        <i class="fas fa-at"></i>
-                        <h4>البريد الإلكتروني</h4>
-                        <p>info@artfriendeg.com</p>
-                    </a>
-                     <a href="http://www.artfriendeg.com" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
-                        <i class="fas fa-external-link-alt"></i>
-                        <h4>موقعنا الإلكتروني</h4>
-                        <p>www.artfriendeg.com</p>
-                    </a>
-                </div>
-                <div class="branches-info anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.5">
-                    <h3 class="branches-title">زورونا في فروعنا:</h3>
-                    <div class="branch-locations">
-                        <div class="branch-location-item">
-                            <i class="fas fa-map-pin icon-before"></i>
-                            <p><strong>فرع الجيزة:</strong> 11 برج الشهر العقاري، شارع مراد، أمام مطعم جاد، الدور الأول.</p>
+                    <div class="lamination-details-container">
+                        <div class="lamination-type-card animate-on-scroll" data-stagger-delay="300">
+                            <h3 class="lamination-card-title">سولوفان لامع (Gloss)</h3>
+                            <p>يمنح مطبوعاتك لمعانًا براقًا يعزز من حيوية الألوان وعمقها. مثالي للصور الفوتوغرافية، أغلفة المجلات، والمواد الترويجية التي تحتاج إلى جذب الانتباه.</p>
+                            <ul class="lamination-benefits">
+                                <li><i class="fas fa-star"></i> يزيد من تشبع الألوان وتألقها.</li>
+                                <li><i class="fas fa-eye"></i> مظهر جذاب ولافت للنظر.</li>
+                                <li><i class="fas fa-shield-alt"></i> حماية جيدة ضد الرطوبة والبقع الخفيفة.</li>
+                            </ul>
                         </div>
-                        <div class="branch-location-item">
-                            <i class="fas fa-map-pin icon-before"></i>
-                            <p><strong>فرع المعادي:</strong> 6 د/4 شارع النصر، تقسيم اللاسلكي، أسفل LC Waikiki.</p>
+                        <div class="lamination-type-card animate-on-scroll" data-stagger-delay="400">
+                            <h3 class="lamination-card-title">سولوفان مط (Matte)</h3>
+                            <p>يوفر مظهرًا أنيقًا وفاخرًا مع ملمس ناعم ومخملي. يقلل من الانعكاسات والوهج، مما يجعله الخيار الأمثل للمطبوعات ذات النصوص الكثيفة أو المعروضة تحت إضاءة قوية.</p>
+                            <ul class="lamination-benefits">
+                                <li><i class="fas fa-moon"></i> يقلل الانعكاسات والوهج المزعج.</li>
+                                <li><i class="fas fa-hand-sparkles"></i> ملمس راقٍ يضفي شعوراً بالفخامة.</li>
+                                <li><i class="fas fa-font"></i> ممتاز للمطبوعات التي تتطلب قراءة مريحة.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="social-links-contact anim-reveal" data-anim_type="fade-in-up" data-anim_delay="0.7">
-                    <p>أو تابعنا على منصات التواصل الاجتماعي:</p>
-                    <a href="https://www.facebook.com/artfriend.eg/" target="_blank" rel="noopener noreferrer" aria-label="آرت فريند على فيسبوك" class="social-icon-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/artfriend.eg/" target="_blank" rel="noopener noreferrer" aria-label="آرت فريند على انستجرام" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <!-- ==================== PORTFOLIO SECTION ==================== -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll"><i class="fas fa-images icon-heading"></i> معرض أعمالنا: شاهد إتقاننا</h2>
+                <p class="section-intro animate-on-scroll" data-stagger-delay="100">شاهد بنفسك كيف نحول الأفكار إلى مطبوعات استثنائية. كل قطعة في معرضنا تحكي قصة نجاح وتعكس التزامنا بأعلى معايير الجودة والإتقان في كل تفصيلة.</p>
+                <div class="portfolio-showcase-grid stagger-children">
+                    <figure class="portfolio-card">
+                        <img src="https://www.focusij.com/u_file/1812/photo/6239e2bef9.jpg" alt="عينات طباعة إن دور متنوعة">
+                        <figcaption><p>مطبوعات داخلية متنوعة</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://i.pinimg.com/736x/99/29/b9/9929b9e1f42b05b445add260ab81a891.jpg" alt="مطبوعات ديجيتال عالية الجودة">
+                        <figcaption><p>مطبوعات ديجيتال فاخرة</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://mmprint.com/wp-content/uploads/2022/02/Final-450x425-1.png" alt="تصميم وطباعة نوت بوك">
+                        <figcaption><p>نوت بوك بتصاميم خاصة</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://i.ytimg.com/vi/_S_h6y9QNYk/maxresdefault.jpg" alt="غلاف كتاب مع سولوفان لامع">
+                        <figcaption><p>أغلفة كتب بسولوفان لامع</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://ra-premium.ru/wp-content/uploads/2018/12/myagkij-pereplet-foto-4.jpg" alt="تقفيل كتاب (بشر - تجليد حراري)">
+                        <figcaption><p>تقفيل كتب (تجليد حراري)</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://avatars.mds.yandex.net/i?id=6b8da71769c5d5c45aa9d1e72fc3bfe5_l-5381778-images-thumbs&ref=rim&n=13&w=970&h=970" alt="تجليد كتب بالخياطة">
+                        <figcaption><p>تجليد متين بالخياطة</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://d2k8htqlk8yn1a.cloudfront.net/img/book/type-layflat-2.jpg" alt="تجليد فاخر هارد كفر">
+                        <figcaption><p>تجليد فاخر (هارد كفر)</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://sc03.alicdn.com/kf/Hdc11afa597d34e3db8d1e5102378ee6dV.jpg" alt="تصميم وطباعة كاتلوج">
+                        <figcaption><p>كتالوجات تعريفية للشركات</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://www.doxdirect.com/wp-content/uploads/Sam_MSWY_2.png" alt="طباعة مجلات وكتيبات (مانجا)">
+                        <figcaption><p>مجلات وكتيبات (مانجا وغيرها)</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://printer-plotter.ru/images/kartochki/hp/latex-800-w-3xd61b/hp-latex-800-w-okonnaya-grafika.jpg" alt="طباعة على فينيل شفاف (ملصقات نوافذ)">
+                        <figcaption><p>ملصقات فينيل شفاف للنوافذ</p></figcaption>
+                    </figure>
+                    <figure class="portfolio-card">
+                        <img src="https://avatars.mds.yandex.net/i?id=9fd1c3c8da4f94225408b4526937b96f_l-11037629-images-thumbs&ref=rim&n=13&w=1200&h=800" alt="لوحات كانفس فنية جدارية">
+                        <figcaption><p>لوحات كانفس جدارية فنية</p></figcaption>
+                    </figure>
                 </div>
+            </div>
+        </section>
+
+        <!-- ==================== DESIGN SERVICES SECTION ==================== -->
+        <section id="design-services" class="design-services-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll"><i class="fas fa-drafting-compass icon-heading"></i> خدمات التصميم الإبداعي: من الفكرة إلى الواقع</h2>
+                <p class="section-intro animate-on-scroll" data-stagger-delay="100">فريقنا من المصممين المبدعين مستعد لتحويل رؤيتك إلى تصاميم بصرية تخطف الأنظار وتحقق أهدافك. نقدم خدمات تصميم متكاملة، مع خبرة خاصة في المواد التعليمية (قوالب كتب ومذكرات، أغلفة مبتكرة، شهادات، كروت خدش تفاعلية)، الهويات البصرية للشركات، والمواد التسويقية التي تترك بصمة.</p>
+                <div class="design-services-highlights stagger-children">
+                    <div class="highlight-item">
+                        <i class="fas fa-book-open"></i>
+                        <h4>تصميم مواد تعليمية مبتكرة</h4>
+                        <p>نحول المحتوى التعليمي إلى تجربة جذابة بصريًا وسهلة الاستيعاب.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-id-card"></i>
+                        <h4>بناء هويات بصرية قوية</h4>
+                        <p>نصمم شعارات وهوية متكاملة تعكس قيم علامتك التجارية وتفردها.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-bullhorn"></i>
+                        <h4>تصميم مواد إعلانية مؤثرة</h4>
+                        <p>نبتكر تصميمات إعلانية تحقق أهدافك التسويقية وتصل إلى جمهورك بفعالية.</p>
+                    </div>
+                     <div class="highlight-item">
+                        <i class="fas fa-gift"></i>
+                        <h4>تصميم عبوات وتغليف جذاب</h4>
+                        <p>نجعل منتجك يبرز على الرف بتصاميم عبوات مبتكرة وعملية.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OUR PROMINENT CLIENTS SECTION ==================== -->
+        <section id="clients" class="clients-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll"><i class="fas fa-handshake icon-heading"></i> شركاء النجاح: قائمة عملائنا المتميزين</h2>
+                <p class="section-intro animate-on-scroll" data-stagger-delay="100">على مدار مسيرتنا الحافلة، كان لنا شرف التعاون وتقديم خدماتنا المتميزة لنخبة من المؤسسات الرائدة والأسماء البارزة في مختلف القطاعات. ثقتهم الغالية هي الدافع وراء سعينا الدائم نحو الإبداع والتميز.</p>
+                <div class="client-logos-slider-container stagger-children">
+                    <div class="client-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/%D8%A7%D9%84%D8%A8%D9%86%D9%83_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%89_%D8%A7%D9%84%D8%A7%D9%81%D8%B1%D9%8A%D9%82%D9%89_%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%89.png" alt="البنك العربي الافريقي الدولي"></div>
+                    <div class="client-logo-item"><img src="https://tradelinestores.s3.amazonaws.com/media/bank_logos/52361cb3-6a95-4f20-81da-b4db3ffe1976.png" alt="بنك القاهرة"></div>
+                    <div class="client-logo-item"><img src="https://i.pinimg.com/originals/6a/49/da/6a49da427bdd830935869d020f1f2e3f.jpg" alt="Yellow Pages"></div>
+                    <div class="client-logo-item"><img src="https://avatars.mds.yandex.net/i?id=1e400de3fea1185b183b6718d5f88da9043b177a-4468494-images-thumbs&n=13" alt="ماكدونالدز"></div>
+                    <div class="client-logo-item"><img src="https://cdn1.flamp.ru/dae242f27859c26159a9fde6e0877204.png" alt="Western Union"></div>
+                    <div class="client-logo-item"><img src="https://avatars.mds.yandex.net/i?id=888a1356ee2c3a6ae10d427817456358267cbd57-8906189-images-thumbs&n=13" alt="Marriott"></div>
+                    <div class="client-logo-item"><img src="https://d37k1b3v2j93zd.cloudfront.net/prod/listing-2019-11/logo_2.png" alt="Chloride"></div>
+                    <div class="client-logo-item"><img src="https://images.wuzzuf-data.net/files/company_logo/Samir-and-Aly-Stationary-Houses-and-Co--Egypt-16828-1459689335-og.jpg" alt="سمير وعلي"></div>
+                    <div class="client-logo-item"><img src="https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/327197453_550828450310233_6431935266137284217_n.png?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=WYaE8BowQW8Q7kNvwFc2ZrH&_nc_oc=AdmAaNmMyKK8dJ6CM5AWmCNT2f_KzcYJGe3jR84-1JzTfN119gEl3QIE1rWvMj-iARw&_nc_zt=23&_nc_ht=scontent.fcai19-3.fna&_nc_gid=Q9qRNEpkVavFnbuQGflJLg&oh=00_AfJ0FLp0-Vuie5G2R-iKMQnW4QLLVv88HhKX00wd4kzZDg&oe=68311A3B" alt="Cairo Media School"></div>
+                    <div class="client-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Cairo_university.jpg" alt="جامعة القاهرة"></div>
+                    <div class="client-logo-item"><img src="https://scontent.fcai19-3.fna.fbcdn.net/v/t1.6435-9/53278871_2148807415214580_1258490808605081600_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3815zRxo6QUQ7kNvwEE6RTS&_nc_oc=AdmmYoh9tU54Gb8FEdS25CZwsFZ8KaTN-nFxYOkfJ0MwlXeZEWrBNOCUv4J_0VrwA6s&_nc_zt=23&_nc_ht=scontent.fcai19-3.fna&_nc_gid=rHVQW9mKDrOg5TWBsTqBZA&oh=00_AfI5Qz0TUXFGfEvcJz8CT0NVK1EqnqI20nhmOBTvYhG6dg&oe=6852CDDB" alt="المركز الروسي للعلوم والثقافة"></div>
+                    <div class="client-logo-item"><img src="https://3.bp.blogspot.com/_lvmALasFj0g/SdiCBSQ3_bI/AAAAAAAAAAU/8jUegmgL8CE/s1600/RESALAGIF.gif" alt="جمعية رسالة"></div>
+                    <div class="client-logo-item"><img src="https://www.cottonilonline.com/cdn/shop/files/logo_2.png?v=1733270067&width=300" alt="Cottonil"></div>
+                    <div class="client-logo-item"><img src="https://s.rbk.ru/v1_companies_s3/media/trademarks/313631f5-e7bd-4f1a-b5a8-98f2df1f3ec7.jpg" alt="Four Seasons"></div>
+                    <div class="client-logo-item"><img src="https://yt3.ggpht.com/a/AGF-l78cZlya30rdHUxgVlasYrnUNbDI4o7DvwXmWA=s900-c-k-c0xffffffff-no-rj-mo" alt="Don Eatery"></div>
+                    <div class="client-logo-item"><img src="https://yt3.googleusercontent.com/ytc/AIdro_lCuSgGpoXoXLVSyTbczFG1loYDfDeqGUmckb_ubg=s900-c-k-c0x00ffffff-no-rj" alt="Town Team"></div>
+                    <div class="client-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Rosa_Elyoussef.png" alt="روز اليوسف"></div>
+                </div>
+                <p class="clients-further-reach animate-on-scroll" data-stagger-delay="300">إلى جانب هذه الكيانات المرموقة، نفخر بكوننا الخيار المفضل للعديد من الفنانين المستقلين المبدعين، منتجي الأفلام القصيرة الطموحين، والعديد من رواد الأعمال الذين يختارون "آرت فريند" لإضفاء لمسة احترافية لا مثيل لها على أعمالهم ومشروعاتهم.</p>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="footer-container container">
-            <div class="footer-logo-area">
-                 <img src="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" alt="شعار آرت فريند" class="footer-logo-img">
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-info animate-on-scroll">
+                <img src="https://i.ibb.co/7xgCxbXL/cc2b0124-3dd0-45a2-97d8-e29131707c30-1.png" alt="شعار آرت فريند - فوشيا وأسود" class="footer-logo">
+                <p>"آرت فريند للطباعة": حيث يلتقي الإبداع بالاحترافية. شريككم الموثوق لجميع احتياجات الطباعة والتصميم منذ عام 2005، ملتزمون بتقديم جودة تفوق التوقعات.</p>
             </div>
-            <p class="copyright-text">© <span id="footer-year"></span> شركة آرت فريند للطباعة والتصميم. جميع الحقوق محفوظة.</p>
-            <p class="developer-credit-personal">تصميم وبرمجة: عمر أمين</p>
+            <div class="footer-quick-links animate-on-scroll" data-stagger-delay="100">
+                <h4>روابط مهمة</h4>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#technologies">تقنياتنا</a></li>
+                    <li><a href="#materials">الخامات</a></li>
+                    <li><a href="#portfolio">أعمالنا</a></li>
+                     <li><a href="#clients">عملاؤنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-info animate-on-scroll" data-stagger-delay="200">
+                <h4>تواصل معنا</h4>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:01201111972">01201111972</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201001668439" target="_blank">01001668439</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@artfriendeg.com">info@artfriendeg.com</a></p>
+                <p><i class="fas fa-globe"></i> <a href="http://www.artfriendeg.com" target="_blank">www.artfriendeg.com</a></p>
+            </div>
+            <div class="footer-social-media animate-on-scroll" data-stagger-delay="300">
+                <h4>تابع إبداعاتنا</h4>
+                <a href="https://www.facebook.com/artfriend.eg/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/artfriend.eg/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <!-- Add other social links here if needed -->
+            </div>
         </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <p>© <span id="current-year"></span> جميع الحقوق محفوظة لشركة آرت فريند للطباعة.</p>
+                <p class="developer-credit">تصميم وبرمجة: عمر أمين</p>
+            </div>
+        </div>
+        <a href="#hero" id="back-to-top-button" aria-label="العودة إلى الأعلى" title="العودة إلى الأعلى"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
-    <button class="scroll-to-top-btn" id="scrollToTopBtn" aria-label="العودة إلى أعلى الصفحة" title="العودة للأعلى">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-    </button>
-
+    <!-- Main JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
